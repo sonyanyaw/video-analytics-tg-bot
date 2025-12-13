@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:17
+    env_file: .env
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+  bot:
+    env_file: .env
+    build: .
+    restart: always
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

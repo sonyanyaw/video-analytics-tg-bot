@@ -1,0 +1,6 @@
+aiogram
+asyncpg
+python-dotenv
+pydantic-settings
+python-dateutil
+requests
