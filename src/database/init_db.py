@@ -1,5 +1,5 @@
 import asyncio
-from database.db import get_pool
+from src.database.db import get_pool
 
 async def create_tables():
     """Создание таблиц 'videos' и 'video_snapshots' в базе данных."""

@@ -1,5 +1,5 @@
 from aiogram import Bot, Dispatcher
-from core.config import TELEGRAM_BOT_TOKEN
+from src.core.config import TELEGRAM_BOT_TOKEN
 
 def main():
     bot = Bot(token=TELEGRAM_BOT_TOKEN)
